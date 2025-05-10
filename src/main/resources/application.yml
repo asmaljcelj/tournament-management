@@ -1,0 +1,9 @@
+quarkus:
+  swagger-ui:
+    path: /swagger-ui
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: admin
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/WTT_CRM_System
