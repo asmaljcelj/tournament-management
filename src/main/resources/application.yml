@@ -1,4 +1,8 @@
 quarkus:
+  http:
+    cors:
+      enabled: true
+      origins: /.*/
   swagger-ui:
     path: /swagger-ui
   datasource:

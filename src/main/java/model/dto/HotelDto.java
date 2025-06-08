@@ -10,7 +10,7 @@ public class HotelDto {
 
     @JsonProperty("id")
     private int id;
-    @JsonProperty("namee")
+    @JsonProperty("name")
     private String name;
 
 }

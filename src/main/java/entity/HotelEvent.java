@@ -13,6 +13,7 @@ public class HotelEvent {
 
   @Id
   @Column(name = "id")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
   @ManyToOne(targetEntity = Hotel.class)
   @JoinColumn(name = "id_hotel", referencedColumnName = "id")

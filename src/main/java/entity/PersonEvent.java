@@ -17,6 +17,7 @@ public class PersonEvent {
 
   @Id
   @Column(name = "id")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
   @ManyToOne(targetEntity = Person.class)
   @JoinColumn(name = "id_person", referencedColumnName = "id")
