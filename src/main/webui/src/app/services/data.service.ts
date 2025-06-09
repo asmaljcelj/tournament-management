@@ -8,7 +8,8 @@ import { Countries } from '../pages/service/country.service';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:8080/';
+    // private apiUrl = 'http://localhost:8080/';
+  private apiUrl = 'https://tournament-crm-fdd7486c3631.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
 
