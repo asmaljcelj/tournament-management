@@ -1,5 +1,6 @@
 quarkus:
   http:
+    port: ${PORT:8080}
     cors:
       enabled: true
       origins: /.*/
@@ -7,7 +8,7 @@ quarkus:
     path: /swagger-ui
   datasource:
     db-kind: postgresql
-    username: postgres
-    password: admin
+    username: u8gbcov0lg62aq
+    password: pdd4b817ff0c81a9ec81677fac9aaa2e95524c66c9122edffdaaa2b93bfc161e7
     jdbc:
-      url: jdbc:postgresql://localhost:5432/WTT_CRM_System
+      url: jdbc:postgresql://c2fbt7u7f4htth.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d2klptuimtk2sb
