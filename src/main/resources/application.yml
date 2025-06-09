@@ -1,4 +1,9 @@
 quarkus:
+  quinoa:
+    package-manager-install:
+      ~: true
+      node-version: 22.16.0
+
   http:
     port: ${PORT:8080}
     cors:
