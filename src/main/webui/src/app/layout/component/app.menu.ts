@@ -32,6 +32,11 @@ export class AppMenu {
                         label: 'Country',
                         icon: 'pi pi-fw pi-warehouse',
                         routerLink: ['/pages/country']
+                    },
+                    {
+                        label: 'Person',
+                        icon: 'pi pi-fw pi-warehouse',
+                        routerLink: ['/pages/person']
                     }
                 ]
             }

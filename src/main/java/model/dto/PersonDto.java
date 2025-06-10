@@ -11,6 +11,8 @@ import java.time.LocalDate;
 @Setter
 public class PersonDto {
 
+    @JsonProperty("id")
+    private Integer id;
     @JsonProperty("first_name")
     private String firstName;
     @JsonProperty("last_name")

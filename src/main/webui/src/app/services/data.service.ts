@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Hotel, Hotels } from '../pages/service/product.service';
 import { Countries } from '../pages/service/country.service';
+import {People, Person} from "../pages/service/person.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-    // private apiUrl = 'http://localhost:8080/';
-  private apiUrl = 'https://tournament-crm-fdd7486c3631.herokuapp.com/';
+    private apiUrl = 'http://localhost:8080/api/';
+  // private apiUrl = 'https://tournament-crm-fdd7486c3631.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
 
@@ -36,4 +37,16 @@ export class DataService {
     console.log('countries GET');
     return this.http.get<Countries>(this.apiUrl + 'country');
   }
+
+  getPeople(): Observable<People> {
+      return this.http.get<People>(this.apiUrl + 'person');
+  }
+
+    editPerson(person: Person): Observable<Person> {
+        return this.http.put<Person>(this.apiUrl + 'person/' + person.id, person);
+    }
+
+    createPerson(person: Person): Observable<Person> {
+        return this.http.post<Person>(this.apiUrl + 'person', person);
+    }
 }

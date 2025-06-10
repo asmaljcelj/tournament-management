@@ -30,7 +30,7 @@ public class PersonService
         personEntity.setLastName(person.getLastName());
         personEntity.setEmail(person.getEmail());
         personEntity.setGender(person.getGender());
-        personEntity.setBirthday(LocalDate.parse(person.getBirthday()));
+        personEntity.setBirthday(person.getBirthday() != null ? LocalDate.parse(person.getBirthday()) : LocalDate.now());
         personEntity.setEmail(person.getEmail());
         personEntity.setUserId(UUID.randomUUID().toString());
         personEntity.setExternalId(person.getExternalId());

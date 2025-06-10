@@ -16,6 +16,7 @@ public interface PersonMapper {
     @Mapping(source = "country.name", target = "country")
     PersonDto toDto(Person person);
 
+
     default PersonGetListResponseDto toDto(List<Person> people) {
         PersonGetListResponseDto dto = new PersonGetListResponseDto();
         List<PersonDto> peopleDto = people.stream().map(this::toDto).collect(Collectors.toList());
