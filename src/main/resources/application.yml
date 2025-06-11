@@ -8,7 +8,6 @@ quarkus:
     cors:
       enabled: true
       origins: /.*/
-    root-path: /api
   swagger-ui:
     path: /swagger-ui
   datasource:

@@ -10,7 +10,7 @@ import {People, Person} from "../pages/service/person.service";
 })
 export class DataService {
     // private apiUrl = 'http://localhost:8080/api/';
-  private apiUrl = 'https://tournament-crm-fdd7486c3631.herokuapp.com/api/';
+  private apiUrl = 'https://tournament-crm-fdd7486c3631.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
 
