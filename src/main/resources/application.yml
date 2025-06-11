@@ -13,10 +13,10 @@ quarkus:
     path: /swagger-ui
   datasource:
     db-kind: postgresql
-    username: postgres
-#    username: u8gbcov0lg62aq
-#    password: pdd4b817ff0c81a9ec81677fac9aaa2e95524c66c9122edffdaaa2b93bfc161e7
-    password: admin
+#    username: postgres
+    username: u8gbcov0lg62aq
+    password: pdd4b817ff0c81a9ec81677fac9aaa2e95524c66c9122edffdaaa2b93bfc161e7
+#    password: admin
     jdbc:
-#      url: jdbc:postgresql://c2fbt7u7f4htth.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d2klptuimtk2sb
-      url: jdbc:postgresql://localhost:5432/WTT_CRM_System
+      url: jdbc:postgresql://c2fbt7u7f4htth.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d2klptuimtk2sb
+#      url: jdbc:postgresql://localhost:5432/WTT_CRM_System
